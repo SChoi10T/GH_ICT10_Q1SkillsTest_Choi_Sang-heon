@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+
+    <!-- BOOTSTRAP 5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- CSS and PYTHON -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+	<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Sweet Choi's logo">
+                <span class="ms-2 fw-bold">Sweet Choi's</span>
+            </a>
+
+        <!-- TOGGLER -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAVBAR ITEMS -->
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="order.html">Order Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- CONTENT -->
+    <div class="container-sm mt-5 mb-5">
+        <img src="logo.png" class="logo mt-3 mb-3">
+        <h1>Food Ordering System</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <h4>Menu:</h4>
+                        <input class="form-check-input" type="checkbox" id="FondantCake">
+                        <label class="form-check-label">Fondant Cake (₱349.0)</label>
+                        <br><br>
+                        <input class="form-check-input" type="checkbox" id="SweetCupcakes">
+                        <label class="form-check-label">Sweet Cupcakes (₱70.0)</label>
+                        <br><br>
+                        <input class="form-check-input" type="checkbox" id="ChocolateCookies">
+                        <label class="form-check-label">Chocolate Cookies (₱60.0)</label>
+                        <br><br>
+                        <input class="form-check-input" type="checkbox" id="VanilaSundae">
+                        <label class="form-check-label">Vanila Sundae (₱75.0)</label>
+                        <br><br>
+                        <input class="form-check-input" type="checkbox" id="FlavoredBread">
+                        <label class="form-check-label">Flavored Bread (₱80.0)</label>
+                        <br><br>
+                        <input class="form-check-input" type="checkbox" id="ChoisSpecial">
+                        <label class="form-check-label">Choi's Special (₱456.0)</label>
+                </form>
+                <br>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <h4>Customer Details:</h4>
+                        <input type="text" class="form-control" id="customerName" placeholder="Enter your name...">
+                        <br>
+                        <input type="text" class="form-control" id="customerAddress" placeholder="Enter your address...">
+                        <br>
+                        <input type="number" class="form-control" id="customerNumber" placeholder="Enter your phone number...">
+                        <br>
+                        <input type="button" class="btn btn-light" value="Create Order" id="login" py-click="order">
+                </form>
+                <br>
+            </div>
+            <hr>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <h4>&#169; AY 2025-2026 | <a href="https://github.com/SChoi10T" target="_blank">Sang-heon G. Choi</a> | 10-Topaz</h4>
+        </div>
+    </footer>
+
+    <!-- PYSCRIPT -->
+    <script type="py" src="main.py"></script>
+</body>
+</html>

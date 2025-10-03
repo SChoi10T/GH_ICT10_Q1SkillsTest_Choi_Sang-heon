@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(253, 230, 231);
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    background: #ff9494;
+    background: linear-gradient(90deg, rgb(255, 148, 148) 0%, rgba(255, 79, 123, 1) 100%);
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.active {
+    background-color: rgba(255, 148, 148, 0.5);
+    border-radius: 10px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.container-sm {
+    text-align: center;
+    padding: 15px;
+    color: #fff8c3;
+    background: #ff9494;
+    background: linear-gradient(90deg, rgb(255, 148, 148) 0%, rgba(255, 79, 123, 1) 100%);
+    border-radius: 15px;
+}
+
+.footer {
+    text-align: center;
+    background: #ff9494;
+    background: linear-gradient(90deg, rgb(255, 148, 148) 0%, rgba(255, 79, 123, 1) 100%);
+    color: rgba(231, 255, 255, 1);
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #fff8c3;
+}
+
+.footer a:hover {
+    color: #fffbde;
+}
